@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules\\.bin\\electron index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kabixi000/PerlinNoiseGenerator/issues"
   },
-  "homepage": "https://github.com/kabixi000/PerlinNoiseGenerator#readme"
+  "homepage": "https://github.com/kabixi000/PerlinNoiseGenerator#readme",
+  "dependencies": {
+    "electron": "^7.1.2"
+  }
 }

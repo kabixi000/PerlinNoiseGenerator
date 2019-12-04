@@ -26,7 +26,7 @@ git log --oneline --decorate --graph --branches --tags --remotes
 git branch -a
 ```
 - 説明通り
-- #### 直前コミットにリセット
+#### 直前コミットにリセット
 ```bash
 git reset --hard HEAD^
 ```

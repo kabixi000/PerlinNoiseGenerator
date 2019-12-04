@@ -45,8 +45,3 @@ gitk --all
 - VSCodeの拡張機能を使ったほうがわかりやすいが、これだけでも基本的なGitの操作をGUIで行える
 #### 困ったときはここを見る
 [【永久保存版】Gitのあらゆるトラブルが解決する神ノウハウ集を翻訳した - LABOT 機械学習ブログ](https://blog.labot.jp/entry/2019/07/01/183204)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MTQ4MjE4MywxMTQ2NzA3NjczLC0xOT
-g0NzE5OTE2LDExNDY3MDc2NzMsNDEwMDc2NDQsMTQwNDQ2NDM2
-NCwtNjU5NTY4MDUyXX0=
--->

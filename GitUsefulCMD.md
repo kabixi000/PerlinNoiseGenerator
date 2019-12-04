@@ -45,3 +45,9 @@ gitk --all
 ```
 - Git for Windowsをインストールしたときに一緒についてくるやつを使う
 - VSCodeの拡張機能を使ったほうがわかりやすいが、これだけでも基本的なGitの操作をGUIで行える
+#### 403エラーがでてPushできなくなったとき
+- `git config --local`の`user.name`や`user.email`が正しく設定されていることを確認
+- 上記を正しく設定しても403の場合`git config --local`の`remote.origin.url`を`https://<USERNAME>@github.com/XXXXXX/<RepositoryName>.git`に変えてPush
+- それでもだめな場合は`git config --local`の`remote.origin.url`を`https://<USERNAME>:<PASSWORD>@github.com/XXXXXX/<RepositoryName>.git`にしてPush
+- Pushできたら`:<PASSWORD>`の部分を削除しておく
+- (上記設定は.git/configからも行える)

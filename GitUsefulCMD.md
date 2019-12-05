@@ -1,5 +1,7 @@
 # Git Useful Commands
 よく使ってるコマンドを集約
+#### 困ったときは一旦ここを見る
+- [【永久保存版】Gitのあらゆるトラブルが解決する神ノウハウ集を翻訳した - LABOT 機械学習ブログ](https://blog.labot.jp/entry/2019/07/01/183204)
 #### 現在のブランチをもとにブランチを作成してチェックアウト
 ```bash
 git checkout -b "BranchName"
@@ -26,7 +28,7 @@ git log --oneline --decorate --graph --branches --tags --remotes
 git branch -a
 ```
 - 説明通り
-- #### 直前コミットにリセット
+#### 直前コミットにリセット
 ```bash
 git reset --hard HEAD^
 ```
@@ -43,10 +45,9 @@ gitk --all
 ```
 - Git for Windowsをインストールしたときに一緒についてくるやつを使う
 - VSCodeの拡張機能を使ったほうがわかりやすいが、これだけでも基本的なGitの操作をGUIで行える
-#### 困ったときはここを見る
-[【永久保存版】Gitのあらゆるトラブルが解決する神ノウハウ集を翻訳した - LABOT 機械学習ブログ](https://blog.labot.jp/entry/2019/07/01/183204)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MTQ4MjE4MywxMTQ2NzA3NjczLC0xOT
-g0NzE5OTE2LDExNDY3MDc2NzMsNDEwMDc2NDQsMTQwNDQ2NDM2
-NCwtNjU5NTY4MDUyXX0=
--->
+#### 403エラーがでてPushできなくなったとき
+- `git config --local`の`user.name`や`user.email`が正しく設定されていることを確認
+- 上記を正しく設定しても403の場合`git config --local`の`remote.origin.url`を`https://<USERNAME>@github.com/XXXXXX/<RepositoryName>.git`に変えてPush
+- それでもだめな場合は`git config --local`の`remote.origin.url`を`https://<USERNAME>:<PASSWORD>@github.com/XXXXXX/<RepositoryName>.git`にしてPush
+- Pushできたら`:<PASSWORD>`の部分を削除しておく
+- (上記設定は.git/configからも行える)

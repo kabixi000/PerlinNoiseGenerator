@@ -17,7 +17,3 @@
  - このリポジトリをクローンする`( CTRL+SHIFT+P -> git clone )`
  - `npm install`する
  - `npm start`で実行できる
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNTk1ODkwMSwtMTA4Mjc1OTYwOSwtMT
-E0NTAzMjQ4OCwtMTU3MDA4NDAyN119
--->

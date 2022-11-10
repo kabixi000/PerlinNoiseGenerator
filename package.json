@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/kabixi000/PerlinNoiseGenerator#readme",
   "dependencies": {
-    "electron": "^7.1.2"
+    "electron": "^18.3.7"
   }
 }
